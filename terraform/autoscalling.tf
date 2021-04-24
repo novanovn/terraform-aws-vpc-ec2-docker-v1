@@ -1,7 +1,7 @@
 resource "aws_launch_configuration" "main-launchconfig" {
   name_prefix     = "main-launchconfig"
   image_id        = var.AMIS[var.AWS_REGION]
-  instance_type   = "t2.micro"
+  instance_type   = "t2.medium"
   key_name        = aws_key_pair.mykeypair.key_name
   security_groups = [aws_security_group.allow-ssh.id]
 }
