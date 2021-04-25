@@ -1,7 +1,7 @@
 # terraform-aws-vpc-ec2-docker-v1
 AWS Terraform script for VPC, Autoscalling &amp; Docker
 
-how to deploy app with terraform
+# how to deploy app with terraform
 Terraform instance AWS
 1. Create User terraform in AWS Console
 2. Before create instances in terraform aws, create AWS Profile in our local OS with  :
@@ -29,7 +29,7 @@ Terraform instance AWS
 
         terraform apply
 
-Deploy in gitlab
+# Deploy in gitlab
 
 Now, assuming we have ssh connection to our server, and docker, git is installed on our server we can go ahead with the following:
 
