@@ -8,7 +8,7 @@ resource "aws_launch_configuration" "main-launchconfig" {
 
 resource "aws_autoscaling_group" "main-autoscaling" {
   name                      = "main-autoscaling"
-  vpc_zone_identifier       = [aws_subnet.private_1.id]
+  vpc_zone_identifier       = [aws_subnet.public_1.id,aws_subnet.private_1.id]
   launch_configuration      = aws_launch_configuration.main-launchconfig.name
   min_size                  = 2
   max_size                  = 5
